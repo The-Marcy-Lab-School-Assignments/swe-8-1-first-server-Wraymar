@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <main>
-        <h1>My First API</h1>
+        <h1>Wraymar's First API</h1>
         <p>
           Welcome to my first API! This is a simple API that returns a random
           joke, can roll dice for you, and can provide you with a nice picture.
