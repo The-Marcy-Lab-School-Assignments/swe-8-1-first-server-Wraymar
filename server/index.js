@@ -2,8 +2,6 @@
 const express = require("express");
 const app = express();
 
-const port = 8080;
-
 // The path module is useful for constructing relative filepaths
 const path = require("path");
 
@@ -67,5 +65,6 @@ app.get("/api/picture", servePicture);
 app.get("/api/joke", serveJoke);
 app.get("/api/rollDie", rollDie);
 
+const port = 8080;
 // run the server application on port 8080 of the current host (http://localhost during development)
 app.listen(port);
