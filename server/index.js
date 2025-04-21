@@ -20,9 +20,9 @@ const logRoutes = (req, res, next) => {
 };
 
 // Register the logRoutes middleware globally to log all requests
+app.use(serveStatic);
 app.use(logRoutes);
 // Register the serveStatic middleware before the remaining controllers
-app.use(serveStatic);
 
 const servePicture = (req, res, next) => {
   const obj = {
